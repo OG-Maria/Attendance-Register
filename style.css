@@ -1,0 +1,237 @@
+body{
+	margin: 0 0 0 0;
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background-size: cover;
+	font-size: 1vw
+	/**background: #fff url(../image/attendance register download4.jpg) repeat top left;*/
+	/*background: #1d3c41;*/
+	/*overflow-y: scroll; */
+}
+.logo{
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 1%;
+	background-color: #3b5998;
+}
+.attendReg{
+	background-color: #3b5998;
+	background:#0ca3d2;
+	/*background: #1d3c41;
+	color: gold;*/
+	border: 2px solid;
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	padding: 1% 0% 3% 0%;
+	border: 0 0 0 0;
+	background-color: #3b5998;
+	color: gold;
+	border-color: #000 !important;
+	margin: 0 0 0 0;
+}
+.welcomeMsg{	
+	margin: 0% 5% 0% 80%;
+	background-color: darkgrey;
+	text-align: center;
+	padding: 0 0 0 0;
+	font-size: 20px;
+}
+.signOut{
+	font-weight: bold;
+	border: 3px solid;
+	text-align: right;
+	margin: 0 0 0 90%;
+	padding: 7px 7px 7px 7px;
+	border-radius: 15%;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #cde5ef;
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	border-color: #000 !important;
+	background-color: #3b5998;
+	color: gold;
+}
+h2{
+	text-align: center;
+	font-size: 200%;
+}
+
+.container{
+	position: relative;
+}
+
+.loginPage{
+	font-family: "Lucida Grande", Tahoma, verdana, sans-serif;
+	/**background-color: rgb(247, 247, 247);**/
+	background:#0ca3d2;
+	background-color: #3b5998;
+	border: 3px solid;
+	position: absolute;
+	text-align: left;
+	margin: 3% 0% 1% 45%;
+	padding: 1% 0% 1% 0%;
+	border-radius: 3%;
+	box-shadow: 0 10px 30px whitesmoke;
+}
+
+.user-Pass{
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	background-color: white;
+	padding: 1% 1% 1% 3%;
+}
+.email{
+	padding-bottom: 3%;
+}
+.remember-me{
+	padding: 3% 0% 3% 0%;
+	text-align: center;
+}
+/**
+input[type=email], input[type=password]{
+	width: 90%;
+	padding: 1% 0% 1% 0%;
+	display: inline;
+	border: 1px solid #ccc;
+}
+**/
+input:hover{	
+	opacity: 0.8;
+	background-color: silver;
+}
+#notMember{
+	color: blue;
+}
+#noPassW{
+	color: blue;
+}
+.notMember{
+	text-align: center;
+	padding: 10% 0 1% 0;
+}
+
+button{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #cde5ef;
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	border-radius: 15%;
+	padding: 1% 5% 1% 5%;
+	margin: 3% 0% 3% 70%;
+	border-color: #000 !important;
+	background-color: #3b5998;
+	color: white;
+}
+
+button:hover{
+	opacity: 0.9;
+}
+
+.registerPage{
+	position: fixed;
+	border: 3px solid;
+		font-family: "Lucida Grande", Tahoma, verdana, sans-serif;
+	/**background-color: rgb(247, 247, 247);**/
+	background:#0ca3d2;
+	background-color: #3b5998;
+	position: absolute;
+	text-align: left;
+	margin: 1% 10% 1% 30%;
+	padding: 1% 0% 1% 0%;
+	border-radius: 3%;
+	box-shadow: 0 10px 30px whitesmoke;
+	width: 40%;
+}
+.inputBox{
+	width: 90%;
+	padding: 1% 0% 1% 0%;
+	display: inline;
+	border: 1px solid #ccc;
+}
+.sendBack{
+	z-index: -300;
+	border: 4px solid;
+}
+p{
+	font-weight: bold;
+}
+.reg-user-pass{
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	background-color: white;
+	padding: 1% 1% 1% 3%;
+}
+#isMember{
+	color: blue;
+}
+.isMember{
+	text-align: center;
+}
+
+#isMember2{
+	font-size: 120%;
+	margin: 0% 2% 2% 2%;
+	padding-top: 0%;
+	font-weight: bold;
+	color: blue;
+	z-index: 12;
+}
+
+#getPassSubmit{
+	margin: 5% 2% 5% 40%;
+}
+
+.forgotPass{
+	border: 3px solid;
+	background-color: white;
+	padding: 1% 1% 1% 3%;
+	margin: 2% 30% 2% 30%;
+}
+
+
+/** UserPage **/
+.userPage{
+
+		position: absolute;
+	border: 3px solid;
+		font-family: "Lucida Grande", Tahoma, verdana, sans-serif;
+	/**background-color: rgb(247, 247, 247);**/
+	text-align: left;
+	margin: 0% 0% 1% 20%;
+	padding: 1% 1% 10% 1%;
+	border-radius: 3%;
+	box-shadow: 0 10px 30px whitesmoke;
+	width: 60%;
+	background: lightgrey;
+}
+#dateTime{
+	position: absolute;
+	background-color: white;
+	padding: 1% 9% 1% 1%;
+	margin: 3% 5% 5% 5%;
+}
+.dropList{
+	margin: 40% 0% 0% 40%;
+}
+.tabList{
+position: absolute;
+width: 20%;
+text-align: left;
+}
+#home{
+	padding: 5% 5% 5% 0%;
+}
+.ft{
+	margin-left: 30%;
+	border:3px solid;
+	width:60%;
+}
+#snackBar{
+	text-align: center;
+	color: darkred;
+	font-weight: bolder;
+}

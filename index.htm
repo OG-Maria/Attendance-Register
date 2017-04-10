@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Attendance Register</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body background="image/attendance register download4.jpg">
+				<img src="image/attendance register download8.jpg" class="logo" hidden>
+				<header>
+					<h1 class="attendReg"> Attendance Register </h1>					
+				</header>
+				<section>
+					<h3 id="welcomeMsg" class="welcomeMsg">WELCOME<h3>
+						<input type="button" class="signOut" id="signOut" value="SIGN OUT"></input>					
+				</section>
+
+		<div class="container">
+			<div class="loginPage" id="loginPage" >
+				<h2> Login </h2>
+
+				<form id="login">
+					<div class="user-Pass">
+						<p  class="email"> Email <br><input type="email" placeholder="Email address or Username" id="lEmail" class="inputBox" required></p>
+
+						<p class="passW"> Password <br><input type="password" placeholder="Password" id="lPassW" class="inputBox" required> </p>
+
+						<p class="remember-me"><input type="checkbox" id="remember-me">Remember me </p>
+
+						<p><button class="Btn" type="submit" id="loginSubmit" title="Login">Login</button></p>
+					</div>
+
+					<p>Forgot your password?<a href="#" id="noPassW">click here to reset</a></p>
+					<p class="notMember"><a href="#" id="notMember">Not yet a Member?</a></p>
+				</form>
+			</div>
+
+
+			<div class="registerPage" id="registerPage" hidden>
+				<h2> Sign up </h2>
+
+				<form id="register">
+					<div class="reg-user-pass">
+						<p> Username <br><input type="text" placeholder="Username" id="username" class="inputBox" value="frank" title="Enter a Username" required></p>
+
+						<p> Email Adress <br><input type="email" placeholder="Email Address" id="regEmail" class="inputBox" title="Email Address" required></p>
+
+						<p> Password <br><input type="password" placeholder="Password" id="regPassW" class="inputBox" title="Enter a Password that is more than 6 characters" required></p>
+						<p> Confirm Password <br><input type="password" placeholder="Confirm Password" id="regCPassW" class="inputBox" title="Enter the Same password as above" required></p>
+
+						<p><h4 id="snackBar" hidden>Wrong password</h4><button class="Btn" type="submit" id="regSubmit" title="Sign up">Sign up</button></p>
+					</div>
+
+					<p class="isMember"><a  href="#" id="isMember">Already a member?</a></p>
+				</form>
+			</div>
+			<div class="forgotPass" id="forgotPass" hidden>
+				<form>
+				<p><h2 class="sendBack">Enter the Email Address used in registration</h2></p>
+				<input type="email" placeholder="Enter Email Address" id="getPassW" class="inputBox" required>
+				<button class="Btn" type="submit" id="getPassSubmit" >Send</button>
+			</form>
+			<a href="#" id="isMember2">Click here to go Back to Login Page</a>
+			</div>
+			
+
+			<div class="userPage" id="userPage" hidden>
+				<div>
+					<div class="tabList">
+						<p><a href="#" id="home">Home</a></p>
+						<p><a href="#" id="attendEvent">Attended Events</a></p>
+						<p><a href="#" id="setting">Settings</a></p>
+					</div>
+					<form>
+						<p style="border:3px solid"><label class="dropList">Select Event to Attend</label>
+							<select id="dropList" required>Events
+							<option></option>
+							<option value="Bootcamp">BootCamp Presentation</option>
+							<option value="wedding">Wedding Ceremony</option>
+							<option value="church">Church Service</option>
+							<option value="wedding">Football Match</option>
+							<option value="wedding">Board Meeting</option>
+						</select></p>
+						<p><label class="dateTime" hidden>Date/Time</label>
+						<label id="dateTime" hidden></label></p>
+						<p><button type="submit" class="Btn" id="attendBtn">Check In</button></p>
+					</form>
+
+					<div>
+					</div>
+				</div>
+			</div>
+
+			<div class="adminPage"
+
+		</div>
+
+		<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCFYPiHszzyLOpkEWVZDAqgK31-Hxj7Gu4",
+		    authDomain: "my-attendance-register.firebaseapp.com",
+		    databaseURL: "https://my-attendance-register.firebaseio.com",
+		    projectId: "my-attendance-register",
+		    storageBucket: "my-attendance-register.appspot.com",
+		    messagingSenderId: "613411996338"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

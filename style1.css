@@ -1,0 +1,109 @@
+body{
+	font-size: 1.4vw;
+}
+.attendReg{
+	border: 2px solid;
+	position: fixed;
+	text-align: center;
+	font-size: 4.4vw;
+	padding: 1% 0% 3% 0%;
+	border: 0 0 0 0;
+	background-color: #3b5998;
+	color: gold;
+	border-color: #000 !important;
+	margin: 0 0 0 0;
+	width: 110%;
+	margin-left: -0.4%;
+}
+
+#tabEvents{
+	position: fixed;
+	border-left: 3px solid;
+	border-right: 3px solid;
+	background-color: lightgrey;
+	width: 6%;
+	text-align: center;
+	padding: 1% 2% 21% 1%;
+	line-height: 300%;
+	font-size: 2vw;
+	font-weight: bold;
+	border: 0% 0% 0% 0%;
+	height: 100%;
+	margin-top: 9.3%;
+	margin-left: -0.4%;
+	z-index: 0;
+	overflow: auto;
+	letter-spacing: 1px;
+}
+tr{
+	border:3px solid;
+	text-align: center;	
+}
+
+a{
+	color: blue;
+}
+.header1{
+	margin: 6% 0% 0% 87%;
+	position: fixed;
+	text-align: right;
+}
+#userHome{
+	position: absolute;
+	text-align: center;
+	border: 3px solid;
+	margin: 20% 0% 0% 10%;
+	width: 85%;
+	height: 50%;
+	border-left: 500%;		
+}
+.userForm{
+	padding: 10% 0% 0% 0%;
+	border: 0% 1% 1% 70%;
+	line-height: 400%;
+}
+#userEvent{
+	border: 3px solid;
+	position: absolute;
+	margin: 20% 10% 10% 19%;
+	padding: 0% 10% 15% 1%;
+	width: 60%;
+}
+td{
+	padding: 0% 0% 0% 0%;
+	width: 40%;
+}
+
+thead{
+	font-weight: bold;
+	font-size: 150%;
+	
+}
+.tableHeading{
+	border-bottom: 3px solid;
+}
+
+#theTable{
+	border-left: 3px solid;
+	border-right: 3px solid;
+	border-bottom: 3px solid;
+	width: 115%;
+}
+
+#adminSelectEvent{
+	position: fixed;
+	margin: 10% 1% 1% 40%;
+	font-size: 150%;
+	z-index: 1;
+}
+
+.adminForm{
+	position: fixed;
+	margin-top: 13%;
+	margin-left: 12%;
+	width: 70%;
+}
+#viewCAT{
+	z-index: -10;
+	margin: 5% 1% 2% 40%;
+}

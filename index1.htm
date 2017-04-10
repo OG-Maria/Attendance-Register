@@ -1,0 +1,86 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title>Attendance Register</title>
+		<link href="style1.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<header>
+			<h1 class="attendReg"> Attendance Register </h1>					
+		</header>
+		<section  class="header1">
+			<p><h3>Welcome</h3><input type="button" id="signOut" value="Sign Out"></p>
+		</section>
+
+		<div hidden>			
+			<select id="adminSelectEvent" placeholder='Select an Event to view' title='Select an Event to view'>
+				<option value='allUser'>All users</option>
+				<option value="Bootcamp">BootCamp Presentation</option>
+				<option value="wedding">Wedding Ceremony</option>
+				<option value="church">Church Service</option>
+				<option value="Football-Match">Football Match</option>
+				<option value="Board-Meeting">Board Meeting</option>
+			</select>
+		</div>		
+
+		<section><em>
+			<div id="tabEvents">
+				<p id='tabHome' class="del"><a href="#">Home</a></p>
+				<p id='tabEvent' class="del"><a href="#">Events</a></P>
+				<p id='tabSetting' class="del"><a href="#">Settings</a></P>
+			</div></em>
+		</section>
+
+		<section id="userForm" >
+			<div id ="userHome" >
+				<form id='userForm' class='userForm'>
+					<label>Select An Event to Attend</label>
+					<select id="selectEvent" placeholder='Select an Event to Attend' title='Select an Event to Attend' required>
+						<option></option>
+						<option value="Bootcamp">BootCamp Presentation</option>
+						<option value="wedding">Wedding Ceremony</option>
+						<option value="church">Church Service</option>
+						<option value="Football-Match">Football Match</option>
+						<option value="Board-Meeting">Board Meeting</option>
+					</select>
+					<p>
+					<button id="EventSubmitBtn" title="Submit"> Submit</button></p>
+				</form>
+				<h3 id="timeAttended" hidden>Attended Wedding Event  @ <span>4/8/2017  11:06PM</span></h3>
+				<input type='date'required><input type='time' required>
+			</div>
+
+			<div id="userEvent" hidden>
+				<table id="theTable" cellspacing ="50px">
+					<thead>
+						<td class="tableHeading">Event Name</td>
+						<td class="tableHeading">Sign in Time</td>
+						<td class="tableHeading">Sign out Time</td>
+						<td>Button</td>						
+					</thead>
+				</table>
+			</div>
+		</section>
+
+		<section class="adminForm" hidden>
+
+			<h1 id='viewCAT'>ALL USERS</h1>
+
+			
+			<div id="adminEvent">
+				<table id="adminTheTable" clas='admin' cellspacing ="50px">
+					<thead>
+						<td class="tableHeading">Event Name</td>
+						<td class="tableHeading">Sign in Time</td>
+						<td class="tableHeading">Sign out Time</td>
+						<td>Button</td>						
+					</thead>
+				</table>
+			</div>
+		</section>
+
+		<script type="text/javascript" src="scripts/mainUser.js"></script>
+	</body>
+
+	</html>
